@@ -9,7 +9,7 @@ bool checkPalindroma(string parola)
 
     int k = parola.length() - 1;
 
-    for (int i = 0; i < parola.length(); i++)
+    for (int i = 0; i < k; i++)
     {
         if (parola[i] == parola[k])
         {
