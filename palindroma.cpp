@@ -14,8 +14,12 @@ bool checkPalindroma(string parola)
         if (parola[i] != parola[k])
         {
             risultato = false;
+            break;
         }
-        k--;
+        else
+        {
+            k--;
+        }
     }
     return risultato;
 }
