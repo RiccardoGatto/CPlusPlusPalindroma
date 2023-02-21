@@ -11,14 +11,14 @@ bool checkPalindroma(string parola)
 
     for (int i = 0; i < parola.length(); i++)
     {
-        if (parola[i] != parola[k])
+        if (parola[i] == parola[k])
         {
-            risultato = false;
-            break;
+            k--;
         }
         else
         {
-            k--;
+            risultato = false;
+            break;
         }
     }
     return risultato;
